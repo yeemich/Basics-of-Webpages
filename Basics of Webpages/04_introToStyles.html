@@ -11,11 +11,11 @@
     <p>
         If you have seen all the files up until this point, you're probobly wanting
         to know the difference in styles between a div and a span.
-        Before we go over that, let's start with the definition of a style.
+        Before we go over that, let's start with the definition of a style in HTML.
     </p>
     <br>
     <p>
-        A style is a but (different word implied? Not sure) of CSS code which your HTML file will run to change how it looks.
+        A style is a bit of CSS code which your HTML file will run to change how it looks.
         There are three ways you can add CSS code to your HTML file.
     </p>
     <ol>
@@ -39,7 +39,7 @@
         That being said, because we are trying to show each style individually, it would be pretty
         annoying to tell you to switch between files or to get you to scroll up and down just to see what I've added
         to each tag. So for this case, I will be adding each style on each tag individually, but in a normal
-        project, I recommend against it. (Suggestion: "I don't recommend it", but what you have sounds good too).
+        project, I recommend against it.
     </p>
     <hr>
     <p>
@@ -58,8 +58,7 @@
     <p>
         Now we can create some CSS code to put in the string. We can now set the background color. To change
         the background color, just type "background-color: " and then the color you want, followed by a semicolon (;).
-        For example, if you wanted the background color to be cyan, we can type within the style string "background-color: cyan;".
-        (Suggestion, you could try rearranging the words ".. we can type "background-color: cyan;" within the style string)
+        For example, if you wanted the background color to be cyan, we can type "background-color: cyan;" within the style string.
     </p>
     <p>style = "background-color: cyan;"</p>
     <p style = "background-color: cyan;">If we add this to our paragraph tag here, you'll see that the background of the paragraph tag is now cyan.</p>
@@ -76,17 +75,16 @@
     <p style = "background-color: cornflowerblue;">Corn Flower Blue</p>
     <p style = "background-color: navajowhite;">Navajo White</p>
     <p>
-        If you want a color that has a name, chances are they probobly have (I'm not sure what you mean here). If you'd like to see everything they have,
+        If you have the name of a color, chances are CSS will recognize that color. If you'd like to see everything they have,
         I'd suggest checking out <a href="https://www.rapidtables.com/web/css/css-color.html"> this site here</a>.
         They show you several of the different colors that can be accessed by name in CSS. I won't say that it's
         all of them just because I don't want to manually check if they're all there, but I did check if they had
-        Navajo White and they did, so it's likely all of them.
+        Navajo White and they did, so it's likely its all of them.
     </p>
     <p>
         Now, if you went to that site before reading this, you may have noticed that they mentioned two other ways of
         defining the background-color. Well, there's actually a total of eight ways (as of now) to define the background-color as a solid color.
-        I won't go into great detail about each one, but I'll provide a link for each one which might be confusing. (I'm not sure what you mean by "which might be confusing")
-        (Suggestion: "I won't go into great detail, but I'll provide a link for each one")
+        I won't go into great detail about each one, but I'll provide a link for most of them one.
     </p>
     <dl>
         <dt>Name    </dt>
@@ -128,7 +126,7 @@
     <br>
 
     <p>
-        Display block means that it takes the tag will be as wide as possible (Not sure of your implication of the words "it takes" here). This is the default for most tags
+        Display block means that the tag will be as wide as possible. This is the default for most tags
         which is why when you open the file, everything is on a different line. Because all the tags have a width
         of 100% of the screen, nothing else can be on the same line. This is also the reason why when we set the
         background color of the paragraph tags, the color will continue untill it hits the edge of the screen.
@@ -137,22 +135,21 @@
     <p>
         Display inline means that it takes up as little space as possible. All characters for example, would be considered
         inline because in order to have text to the right and to the left of each character, it needs
-        to take up the exact amount of space needed for the character and nothing more. If characters instead had a
-        display type of block, each character would be on a separate line, which is definitely not ideal.
-        (What do you mean by "display type of block"?)
+        to take up the exact amount of space needed for the character and nothing more. If characters instead were
+        block elements, each character would be on a separate line, which is definitely not ideal.
     </p>
 
     <p>
         Here are the two different display types for the paragraph tag.
-        I'll add a background color so that it's easier (missing words here?) the size of each tag on the screen.
+        I'll add a background color so that it's easier to see the size of each tag on the screen.
     </p>
 
     <p style="display: block;background-color: darkturquoise;">Display Block (Default)</p>
     <p style="display: inline;background-color: darkturquoise;">Display Inline</p>
 
     <p>
-        As you can see, it makes a pretty notable difference what the display is. (Instead of "what the display is", maybe try "to the display")
-        The background color doesn't go to the end of the screen when we use Display Inline. There are quite a (few? couple?)
+        As you can see, what the display is set to makes a pretty notable difference visually.
+        The background color doesn't go to the end of the screen when we use Display Inline. There are quite a few
         other display types, but those ones are harder to understand so we'll skip over them for now.
         I'll provide a link to a youtube video which does a really good job of explaining all the ones we
         just went over a bit more, as well as some other ones which I wasn't planning on going over,
@@ -167,14 +164,14 @@
     </p>
 
     <ul>
-        <li>div tag has a display of block and is meant for grouping block elements</li>
+        <li>a div is block element and is meant for grouping block elements</li>
         <li>span tag has a display of inline and is meant for grouping inline elements</li>
     </ul>
 
     <p>
         This explains why div tags are meant for grouping several tags and span tags are meant for
-        grouping chunks of text, as most tags are block elements by default and all text is act (acting?)
-        like inline elements. I'll show you how we can now use this to help us control the background
+        grouping chunks of text, as most tags are block elements by default and all text is an
+        inline element. I'll show you how we can now use this to help us control the background
         color of different tags and text.
     </p>
 
@@ -185,7 +182,7 @@
             You can see that it turns the background color of all these
             paragraph tags to cadet blue.
         </p>
-        <p>This is because the div has a style on it which (that?) changes to (the?) background color of everything inside.</p>
+        <p>This is because the div has a style on it which changes the background color of everything inside it.</p>
         <p>
             If I wanted to have <span style="background-color: khaki;">this part of the text be a different color from the rest,</span>
             I would just put that part of the text in a span tag and style the span.
