@@ -15,7 +15,7 @@
     </p>
     <br>
     <p>
-        A style is a but of CSS code which your HTML file will run to chagnge how it looks.
+        A style is a but of CSS code which your HTML file will run to change how it looks.
         there are three ways you can add CSS code to your HTML file
     </p>
     <ol>
@@ -51,9 +51,149 @@
         sure that you do spell it the way CSS wants or it'll do nothing).
     </p>
 
+    <p>In the tag you'd like add an inline style to, we'll start by creating the "style" value.</p>
+    <p>style</p>
+    <p>Then, we need to set it equal to a string of CSS code. Let's start by setting equal to an empty string.</p>
+    <p>style = ""</p>
+    <p>
+        Now we can create some CSS code to put in the string. We can now set the background color. To change
+        the background color, just type "background-color: " and then the color you want, followed with a semicolon (;).
+        For example, if you wanted the background color to be cyan, we can type within the style string "background-color: cyan;".
+    </p>
+    <p>style = "background-color: cyan;"</p>
+    <p style = "background-color: cyan;">If we add this to our paragraph tag here, you'll see that the background of the paragraph tag is now cyan.</p>
+    <br>
+    <p>CSS has a suprising amount of colors which you can write by name.</p>
+    <p style = "background-color: red;">Red</p>
+    <p style = "background-color: yellow;">Yellow</p>
+    <p style = "background-color: green;">Green</p>
+    <p style = "background-color: blue;">Blue</p>
+    <p style = "background-color: violet;">Violet</p>
+    <p style = "background-color: darkcyan;">Dark Cyan</p>
+    <p style = "background-color: fuchsia;">Fuchsia</p>
+    <p style = "background-color: azure;">Azure</p>
+    <p style = "background-color: cornflowerblue;">Corn Flower Blue</p>
+    <p style = "background-color: navajowhite;">Navajo White</p>
+    <p>
+        If you want a color that has a name, chances are, they probobly have. If you'd like to see everything they have,
+        I'd suggest checking out <a href="https://www.rapidtables.com/web/css/css-color.html"> this site here</a>.
+        They show you several of the different colors which can be accessed by name in CSS. I won't say that it's
+        all of them just because I don't want to manually check if they're all there but I did check if they had
+        Navajo White and they did so it's likely all of them.
+    </p>
+    <p>
+        Now, if you went to that site before reading this, you may have noticed that they mentioned two other ways of
+        defining the background-color. Well, there's actually a total of eight ways (as of now) to define the background-color as a solid color.
+        I won't go into great detail about each one but I'll provide a link for each one which might be confusing.
+    </p>
+    <dl>
+        <dt>Name    </dt>
+            <dd>ex: Red, Bule, Purple</dd>
+        <dt><a href="https://www.w3schools.com/colors/colors_picker.asp">Hex color</a></dt>
+            <dd>ex: ff0000, 0000ff, ff00ff</dd>
+        <dt>Short Hex color</dt>
+            <dd>ex: f00, 00f, f0f</dd>
+        <dt><a href="https://www.w3schools.com/colors/colors_rgb.asp">rgb color</a></dt>
+            <dd>ex: rgb(255,0,0), rgb(0,0,255), rgb(255,0,255)</dd>
+        <dt><a href="https://www.w3schools.com/cssref/func_rgba.asp">rgba color</a></dt>
+            <dd>just like rgb but you can define opacity. ex: rgba(255,0,0,1), rgba(0,0,255,1), rgba(255,0,255,1)</dd>
+        <dt><a href="https://www.w3schools.com/colors/colors_hsl.asp">hsl color</a></dt>
+            <dd>ex: hsl(0,100%,50%), hsl(240,100%,50%), hsl(300,100%,50%)</dd>
+        <dt>hlsa color</dt>
+            <dd>just like hls but you can define opacity. ex: hsla(0,100%,50%,1), hsla(240,100%,50%,1), hsla(300,100%,50%,1)</dd>
+        <dt><a href="https://www.w3schools.com/colors/colors_cmyk.asp">CMYK color</a></dt>
+            <dd>ex: cmyk(0%, 100%, 100%, 0%), cmyk(100%, 100%, 0%, 0%), cmyk(0%, 100%, 0%, 0%)</dd>
+    </ul>
+
+    <p>
+        The only ones I would make sure to understand are rgb color and hex color. Those ones are used
+        quite often so a bit of knowledge on how they work would be ideal.
+    </p>
+    <hr>
+    <p>Now we're going to go into the "display" style</p>
     
+    <br>
+    
+    <p>
+        The display style is a little tricky to understand so we'll just start off with the basic two display types.
+    </p>
 
+    <ul>
+        <li>block (written as display: block)</li>
+        <li>inline (written as display: inline)</li>
+    </ul>
 
+    <br>
+
+    <p>
+        display block means that it takes the tag will be as wide as possible. This is the default for most tags
+        which is why when you open the file, everything is on a different line. Because all the tags have a width
+        of 100% of the screen, nothing else can be on the same line. This is also the reason why when we set the
+        background color of the paragraph tags, the color will continue till it hits the edge of the screen.
+    </p>
+
+    <p>
+        display inline mean that it takes up as little space as possible. all characters for example would be considered
+        inline because in order to have text to the right and to the left of each character, it needs
+        to take up the exact amount of space needed for the chaaracter and nothing more. If characters instead had a
+        display type of block, each character would be on a seprate line which is definitely not ideal.
+    </p>
+
+    <p>
+        here are the two different display types for the paragraph tag.
+        I'll add a background color so that it's easier the size of each tag on the screen.
+    </p>
+
+    <p style="display: block;background-color: darkturquoise;">Display Block (Default)</p>
+    <p style="display: inline;background-color: darkturquoise;">Display Inline</p>
+
+    <p>
+        As you can see, it makes a pretty notable difference what the display is. There are quite a
+        other display types but those ones can are harder to understand so we'll skip over them for now.
+        I'll provide a link to a youtube video which does a really good job of explaing all the ones we
+        just went over a bit more as well as some other ones which I wasn't planning on going over
+        like display flex and display grid as they are very involved.
+    </p>
+
+    <br>
+
+    <p>
+        we can now finally talk about the difference between a div tag and a span tag.
+        It's quite simple actually.
+    </p>
+
+    <ul>
+        <li>div tag has a display of block and is meant for grouping block elements</li>
+        <li>span tag has a displau of inline and is meant for grouping inline elements</li>
+    </ul>
+
+    <p>
+        This explains why div tags are meant for grouping sevral tags and span tags are meant for
+        grouping chunks of text. Because most tags are block elements by default and all text is act
+        like inline elements. I'll show you how we can now use this to help us control the background
+        color of different tags and text.
+    </p>
+
+    <div style="background-color: cadetblue;">
+        <p>I've put all of these paragraph tags in a div.</p>
+        <p>Paragraph tags are block elements by default so this works well.</p>
+        <p>
+            You can see that it turns the background color of all these
+            paragraph tags to cadet blue.
+        </p>
+        <p>This is because the div has a style on it which changes to background color of everything inside.</p>
+        <p>
+            If I wanted to have <span style="background-color: khaki;">this part of the text be a different color from the rest,</span>
+            I just put that part of the text in a span tag and style the span.
+        </p>
+    </div>
+
+    <hr>
+
+    <p>
+        This concludes our introduction of CSS. Next, we'll get into a bunch of different styles which
+        are commonly used. Good luck and have fun.
+    </p>
 
 </body>
 </html>
