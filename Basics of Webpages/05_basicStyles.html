@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Styles</title>
+    <style>
+
+        /* 
+        
+        This is one of the other ways you can add styles in HTML.
+        As you can see, I have put a "style" tag inside of the "head" tag to do this.
+        The style tag treats all the text within it as CSS code.
+
+        To add a style in a "style" tag, it's quite simple
+
+
+        (What you'd like to change the style of)
+        {
+            styles...
+        }
+
+
+        That's all. Now you can add styles in a style tag.
+
+        */
+
+        p /*All p tags in this file*/
+        {
+            background-color: burlywood;
+        }
+
+        /* 
+        If two different things are trying to style the same elements,
+        It'll use the more specific style to the tag.
+        (To be more accurate, its which ever one has the parent)
+         */
+
+        div p /*All p tags in a div tag in this file*/
+        {
+            background-color: aqua;
+        }
+
+        /*
+        In this case, for the p tags which are in a div, (div p) is more specific than (p) so
+        those ones will have a background color of aqua.
+        If a p tag isn't in a div however, it doesn't meet the requirements of (div p) so
+        those one will have a background color of burlywood.
+        */
+
+        ul li /*All li tags in a ul tag in this file*/
+        {
+            background-color: rgb(255, 255, 125);
+        }
+
+        span /*All span tags in this file*/
+        {
+            background-color: greenyellow;
+        }
+
+        body /*The body tag*/
+        {
+            background-color: cornsilk;
+        }
+
+        /* Those are the basics of the pure CSS code in a style tag but we'll further into it later. */
+    </style>
+</head>
+<body>
+    <h1 style="display: inline; background-color: burlywood;">Basic Styles</h1>
+    <hr>
+    <p>
+        In this file, we'll be going over several basic styles to look at and use.
+        Make sure that before continuing, you <span>read the comments in the "style" tag</span> I added for
+        the first time <span> in the "head" tag </span> above.
+    </p>
+
+    <p>The different styles we'll be going over are...</p>
+    <ol style="background-color: burlywood;">
+        <li>Color</li>
+
+        <li>Text-Decoration</li>
+
+        <li>Font-Style</li>
+        <li>Font-Weight</li>
+        <li>Font-Size (and CSS units)</li>
+        <li>Font-Family</li>
+        <li>Font</li>
+
+    </ol>
+
+    <p>Let's begin</p>
+
+    <hr>
+
+    <p style="color:crimson">1. Color: Changes the color of the text within a tag. We've already gone
+    over all the ways which someone can write a color in CSS so we won't do it again but they all work.
+    for everytag, including this one.</p>
+
+    <hr>
+
+    <p>
+        2. Text-Decoration: allows you to change how the text's decoration (the underline, overline or line-through) looks.
+        The first step is deciding wether you want underlined, overlined, line-through or any combination of them.
+    </p>
+
+    <ul>
+        <li style="text-decoration: underline;">Underlined</li>
+        <li style="text-decoration: overline;">OverLined (this overline is completly separate from the underline above)</li>
+        <li style="text-decoration: line-through;">Line-Through</li>
+        <li style="text-decoration: underline overline line-through;">All</li>
+    </ul>
+
+    <p>
+        Once you specify that, you can set the what you would like each line to look.
+        I'll use only underlines to show you.
+    </p>
+
+    <ul>
+        <li style="text-decoration: underline dashed;">Underline Dashed</li>
+        <li style="text-decoration: underline solid;">Underline Solid</li>
+        <li style="text-decoration: underline dotted;">Underline Dotted</li>
+        <li style="text-decoration: underline wavy;">Underline Wavy</li>
+        <li style="text-decoration: underline double;">Underilne Double</li>
+    </ul>
+
+    <p>Then, we can add a color onto the end of it to specify the color of the line</p>
+
+    <ul>
+        <li style="text-decoration: underline solid red;">Underline Solid Red</li>
+        <li style="text-decoration: underline solid green;">Underline Solid Green</li>
+        <li style="text-decoration: underline solid blue;">Underline Solid Blue</li>
+    </ul>
+
+    <p>You can also assign each of those values individually using</p>
+
+    <p style="
+    text-decoration-line: underline overline;
+    text-decoration-style: double;
+    text-decoration-color: yellow;">
+        text-decoration-line, text-decoration-style and Text-Decoration-Color
+    </p>
+
+    <hr>
+
+    <p>Let's talk about Fonts now.</p>
+
+    <p style="font-style: italic;">
+        3. Font-Style: Changes the style of the text. The other styles are...
+    </p>
+    <ul>
+        <li style="font-style: oblique;">Font-Style: Oblique</li>
+        <li style="font-style: normal;">Font-Style: Normal</li>
+    </ul>
+
+    <p style="font-weight: bold;">
+        4. Font-Weight: The boldness/weight of the text. You can set this two different ways
+    </p>
+
+    <dl>
+        <dt>Name</dt>
+        <dd style="font-weight: lighter;">Font-Weight: Lighter</dd>
+        <dd style="font-weight: normal;">Font-Weight: Normal</dd>
+        <dd style="font-weight: bold;">Font-Weight: Bold</dd>
+        <dd style="font-weight: bolder;">Font-Weight: Bolder</dd>
+        <dt>Number</dt>
+        <dd style="font-weight: 100;">Font-Weight: 100</dd>
+        <dd style="font-weight: 300;">Font-Weight: 300</dd>
+        <dd style="font-weight: 500;">Font-Weight: 500</dd>
+        <dd style="font-weight: 700;">Font-Weight: 700</dd>
+        <dd style="font-weight: 900;">Font-Weight: 900</dd>
+    </dl>
+
+    <p>
+        If you don't see a difference between all the other weights, it's most
+        likley that the font used doesn't support it past "bold" and "not bold"
+        If you needed more weights for whatever reason, you would need to pick a new font.
+    </p>
+
+    <p style="font-size: xx-large;">
+        5.1. Font-Size: changes the size the the font. there are 2 way you can set the font size.
+    </p>
+
+    <dl>
+        <dt>Name</dt>
+        <dd style="font-size: small;">small</dd>
+        <dd style="font-size: medium;">medium</dd>
+        <dd style="font-size: large;">large</dd>
+        <dd style="font-size: x-large;">x-large</dd>
+        <dt>Number (units)</dt>
+    </dl>
+
+    <p>
+        We need to go into a mini lesson on units before explaining
+        how to set the font-size with a Number
+    </p>
+
+    <div style="background-color: darkgrey;">
+        <h2 style="display: inline; background-color: burlywood;">5.2. Units</h2>
+        <p>There are a number of different units so I'll quickly go over all of them quickly.</p>
+        <p>Let's start with the fixed units which don't change in length.</p>
+
+        <ul>
+            <li>cm (centimeters)</li>
+            <li>mm (millimeters)</li>
+            <li>in (inches)</li>
+            <li>px (pixels)</li>
+            <li>pt (<a href="https://graphicdesign.stackexchange.com/questions/199/point-vs-pixel-what-is-the-difference">point</a>)</li>
+            <li>pc (<a href="https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/points-and-picas">picas</a>)</li>
+        </ul>
+
+        <p>Of those units, the main one to remember would be px, the other ones are not often used.</p>
+        <p>The next set of units are relative units which do change in length.</p>
+        
+        <ul>
+            <li><a href="https://www.w3schools.com/cssref/css_pxtoemconversion.asp">em</a>  (current font-size)</li>
+            <li><a href="https://stackoverflow.com/questions/918612/what-is-the-value-of-the-css-ex-unit">ex</a> (height of a lowercase 'x' character)</li>
+            <li><a href="https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/">ch</a> (width of the '0' character of current font-size)</li>
+            <li>rem (font-size of the "html" tag)</li>
+            <li>vw (1% of the width of the webpage/veiwport)</li>
+            <li>vh (1% of the height of the webpage/veiwport)</li>
+            <li>vmin (1% of the webpage's/veiwport's smaller dimesion. ex: phone:width, tv:height)</li>
+            <li>vmax (1% of the webpage's/veiwport's bigger dimesion. ex: phone:height, tv:width)</li>
+            <li>% (relative to the dimesions of the parent/container element</li>
+        </ul>
+
+        <p>
+            Of these units, the main ones to remember are em, vw, vh and %.
+        </p>
+
+        <p>
+            Those are all the units of CSS. If you can remember just those main 5 I said, you should be good
+            to do 99% of the dimesioning you need to do for your website. If you want to go into a bit more
+            detail about the units, you can check out
+            <a href="https://www.w3schools.com/cssref/css_units.asp">w3school's page on CSS units</a> or
+            <a href="https://www.w3.org/Style/Examples/007/units.en.html">the pdf on CSS units by w3</a>.
+            Both are very helpful and to good to look at for any extra needed clarity on CSS units.
+        </p>
+
+    </div>
+
+    <p>
+        Now we can go back to font-size. <span style="font-weight: bold;">Anything that accepts a length in CSS will
+        allow you to use any of these units</span> which also includes font-size. I would show you all the differnet
+        units but a lot of them have no paratical use when it comes font-size. I will just show you how to do it with the
+        pixel (px) units but know that if you wanted to use the other ones, they would work.
+    </p>
+
+    <p style="font-size: 50px;">This the font size at 50px</p>
+
+    <p>Now let's move on to the rest of the styles.</p>
+
+    <hr>
+
+    <p style="font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;">
+        6. Font-Family: Let's you pick the font you want.
+        In case a device doesn't have the font you want, it's best to put your font-family as
+        a list of possible fonts that you would be ok with the computer displaying in case they don't have the your first font.
+        At the end of the list, you should put a few common fonts in which you know will work with most devices that you would like.
+        For a list of common fonts that will work close to 100% of the time, go to <a href="https://websitesetup.org/web-safe-fonts-html-css/">this site here</a>.
+    </p>
+
+    <p>
+        7. Font: We can use the this style to set the
+        size, weight and family (in that order) of a font all at once.
+        I don't think it's too hard to figure it out so I'll just show
+        you an example of how you would use it.
+    </p>
+
+    <!--            size weight family  
+                     \/    \/     \/           -->
+    <p style="font: large bold Arial, Helvetica, sans-serif;">
+        Here's a paragraph which has been set to a font size of "large",
+        a font weight of "bold", the font family of Arial and given
+        the option to fallback on Helvetica or sans-serif if the device doesn't have
+        the Arial font (which a surprising amount of devices don't have actually).
+    </p>
+
+    <hr>
+
+    <p>
+        That will conclude the end of this file. in the next file, we'll
+        go over some more styles next file and finish up with the basics
+        of CSS. Good luck and have fun.
+    </p>
+
+</body>
+</html>
