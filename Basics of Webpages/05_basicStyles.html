@@ -12,10 +12,10 @@
         As you can see, I have put a "style" tag inside of the "head" tag to do this.
         The style tag treats all the text within it as CSS code.
 
-        To add a style in a "style" tag, it's quite simple
+        To add a style in a "style" tag, it's quite simple.
 
 
-        (What you'd like to change the style of)
+        (What you'd like to change the style of) (This seems a little unclear, is there another way you could depict what you're trying to say?)
         {
             styles...
         }
@@ -32,8 +32,8 @@
 
         /* 
         If two different things are trying to style the same elements,
-        It'll use the more specific style to the tag.
-        (To be more accurate, its which ever one has the parent)
+        it'll use the more specific style to the tag.
+        (To be more accurate, it's whichever one has the parent) (What do you mean by "parent"?)
          */
 
         div p /*All p tags in a div tag in this file*/
@@ -44,8 +44,8 @@
         /*
         In this case, for the p tags which are in a div, (div p) is more specific than (p) so
         those ones will have a background color of aqua.
-        If a p tag isn't in a div however, it doesn't meet the requirements of (div p) so
-        those one will have a background color of burlywood.
+        However, if a p tag isn't in a div, it doesn't meet the requirements of (div p) so
+        those ones will have a background color of burlywood.
         */
 
         ul li /*All li tags in a ul tag in this file*/
@@ -63,7 +63,7 @@
             background-color: cornsilk;
         }
 
-        /* Those are the basics of the pure CSS code in a style tag but we'll further into it later. */
+        /* Those are the basics of the pure CSS code in a style tag but we'll look further into it later. */
     </style>
 </head>
 <body>
@@ -71,7 +71,7 @@
     <hr>
     <p>
         In this file, we'll be going over several basic styles to look at and use.
-        Make sure that before continuing, you <span>read the comments in the "style" tag</span> I added for
+        Make sure that before continuing, you <span>read the comments in the "style" tag</span> that I added for
         the first time <span> in the "head" tag </span> above.
     </p>
 
@@ -94,26 +94,27 @@
     <hr>
 
     <p style="color:crimson">1. Color: Changes the color of the text within a tag. We've already gone
-    over all the ways which someone can write a color in CSS so we won't do it again but they all work.
+    over all the ways which someone can write a color in CSS so we won't do it again, but they all work.
     for everytag, including this one.</p>
 
     <hr>
 
     <p>
-        2. Text-Decoration: allows you to change how the text's decoration (the underline, overline or line-through) looks.
-        The first step is deciding wether you want underlined, overlined, line-through or any combination of them.
+        2. Text-Decoration: Allows you to change how the text's decoration (the underline, overline or line-through) looks.
+        The first step is deciding whether you want underlined, overlined, line-through or any combination of them.
     </p>
 
     <ul>
         <li style="text-decoration: underline;">Underlined</li>
-        <li style="text-decoration: overline;">OverLined (this overline is completly separate from the underline above)</li>
+        <li style="text-decoration: overline;">OverLined (this overline is completely separate from the underline above)</li>
         <li style="text-decoration: line-through;">Line-Through</li>
         <li style="text-decoration: underline overline line-through;">All</li>
     </ul>
 
     <p>
-        Once you specify that, you can set the what you would like each line to look.
-        I'll use only underlines to show you.
+        Once you specify that, you can set the (I think you're missing some words here) what you would like each line to look.
+        I'll use only underlines to show you. 
+        (Line 116: "I'll only use underlines to show you", but this is just a suggestion)
     </p>
 
     <ul>
@@ -173,12 +174,12 @@
 
     <p>
         If you don't see a difference between all the other weights, it's most
-        likley that the font used doesn't support it past "bold" and "not bold"
+        likely that the font used doesn't support it past "bold" and "not bold".
         If you needed more weights for whatever reason, you would need to pick a new font.
     </p>
 
     <p style="font-size: xx-large;">
-        5.1. Font-Size: changes the size the the font. there are 2 way you can set the font size.
+        5.1. Font-Size: changes the size the the font. There are 2 ways you can set the font size.
     </p>
 
     <dl>
@@ -197,7 +198,7 @@
 
     <div style="background-color: darkgrey;">
         <h2 style="display: inline; background-color: burlywood;">5.2. Units</h2>
-        <p>There are a number of different units so I'll quickly go over all of them quickly.</p>
+        <p>There are a number of different units so I'll quickly go over all of them.</p>
         <p>Let's start with the fixed units which don't change in length.</p>
 
         <ul>
@@ -219,9 +220,9 @@
             <li>rem (font-size of the "html" tag)</li>
             <li>vw (1% of the width of the webpage/veiwport)</li>
             <li>vh (1% of the height of the webpage/veiwport)</li>
-            <li>vmin (1% of the webpage's/veiwport's smaller dimesion. ex: phone:width, tv:height)</li>
-            <li>vmax (1% of the webpage's/veiwport's bigger dimesion. ex: phone:height, tv:width)</li>
-            <li>% (relative to the dimesions of the parent/container element</li>
+            <li>vmin (1% of the webpage's/veiwport's smaller dimension. ex: phone:width, tv:height)</li>
+            <li>vmax (1% of the webpage's/veiwport's bigger dimension. ex: phone:height, tv:width)</li>
+            <li>% (relative to the dimensions of the parent/container element</li>
         </ul>
 
         <p>
@@ -229,21 +230,21 @@
         </p>
 
         <p>
-            Those are all the units of CSS. If you can remember just those main 5 I said, you should be good
-            to do 99% of the dimesioning you need to do for your website. If you want to go into a bit more
+            Those are all the units of CSS. If you can just remember the main 5 that I mentioned, you should be good
+            to do 99% of the dimensioning you need to do for your website. If you want to go into a bit more
             detail about the units, you can check out
             <a href="https://www.w3schools.com/cssref/css_units.asp">w3school's page on CSS units</a> or
             <a href="https://www.w3.org/Style/Examples/007/units.en.html">the pdf on CSS units by w3</a>.
-            Both are very helpful and to good to look at for any extra needed clarity on CSS units.
+            Both are very helpful and good to look at for any extra clarity needed on CSS units.
         </p>
 
     </div>
 
     <p>
         Now we can go back to font-size. <span style="font-weight: bold;">Anything that accepts a length in CSS will
-        allow you to use any of these units</span> which also includes font-size. I would show you all the differnet
-        units but a lot of them have no paratical use when it comes font-size. I will just show you how to do it with the
-        pixel (px) units but know that if you wanted to use the other ones, they would work.
+        allow you to use any of these units</span> which also includes font-size. I would show you all the different
+        units, but a lot of them have no practical use when it comes to font-size. I will just show you how to do it with the
+        pixel (px) units, but know that if you wanted to use the other ones, they would work.
     </p>
 
     <p style="font-size: 50px;">This the font size at 50px</p>
@@ -255,22 +256,23 @@
     <p style="font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;">
         6. Font-Family: Let's you pick the font you want.
         In case a device doesn't have the font you want, it's best to put your font-family as
-        a list of possible fonts that you would be ok with the computer displaying in case they don't have the your first font.
+        a list of possible fonts that you would be ok with the computer displaying in case they don't have the your first choice available.
         At the end of the list, you should put a few common fonts in which you know will work with most devices that you would like.
+        (Maybe try: At the end of the list, you should put a few common fonts in which you know will work for most compatible devices)
         For a list of common fonts that will work close to 100% of the time, go to <a href="https://websitesetup.org/web-safe-fonts-html-css/">this site here</a>.
     </p>
 
     <p>
-        7. Font: We can use the this style to set the
+        7. Font: We can use this style to set the
         size, weight and family (in that order) of a font all at once.
-        I don't think it's too hard to figure it out so I'll just show
+        I don't think it's too hard to figure it out, so I'll just show
         you an example of how you would use it.
     </p>
 
     <!--            size weight family  
                      \/    \/     \/           -->
     <p style="font: large bold Arial, Helvetica, sans-serif;">
-        Here's a paragraph which has been set to a font size of "large",
+        Here's a paragraph that has been set to a font size of "large",
         a font weight of "bold", the font family of Arial and given
         the option to fallback on Helvetica or sans-serif if the device doesn't have
         the Arial font (which a surprising amount of devices don't have actually).
@@ -279,8 +281,8 @@
     <hr>
 
     <p>
-        That will conclude the end of this file. in the next file, we'll
-        go over some more styles next file and finish up with the basics
+        That will conclude the end of this file. In the next file, we'll
+        go over some more styles and finish up with the basics
         of CSS. Good luck and have fun.
     </p>
 
