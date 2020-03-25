@@ -13,7 +13,7 @@
 
         /* 
         In CSS, you can also set multiple different types of
-        elements at once by seprating each one by a comma.
+        elements at once by separating each one by a comma.
          */
         
         p, ol, ul, span /* All p, ol, ul and span tags. */
@@ -38,7 +38,7 @@
     
     <p>
         In this file, we'll go over the rest of the basic styles
-        which you should know in CSS. Similar to the last file, you should
+        that you should know in CSS. Similar to the last file, you should
         make sure to <span style="font-size: large; font-weight: bold;">read what's in the style tag above</span>
         to see why everything on the page has the style it has.
     </p>
@@ -77,7 +77,7 @@
     <p>
         Also, it may be weird that height and width can't be set in an inlined element.
         It actually makes a lot of sense though. The whole point of inline is to take
-        up the least amount of space possible so if you're just going to set the
+        up the least amount of space possible, so if you're just going to set the
         width and height, what's the point?
     </p>
     
@@ -86,13 +86,13 @@
     <div style="background-color: darksalmon;">
         <p>I've put all tags for the next two styles in a div so you can see them better</p>
         <p style="margin: 60px;">
-            3. Margin: Increases the size of the tag from the outisde. Here's 60px.
+            3. Margin: Increases the size of the tag from the outside. Here's 60px.
             I'm going to set the margin of the hr tags to 0 so you can see it better and don't
             get the default margin of the hr tags mixed up with the margin of the p tags.
         </p>
         <hr style="margin: 0;">
         <p style="margin: 20px 200px;">
-        You can also control the vertical margin seprate from the horizontal margin.
+        You can also control the vertical margin separate from the horizontal margin.
         Here's 20px vertical and 200px horizontal.
         </p>
         <hr style="margin: 0;">
@@ -103,7 +103,7 @@
         <hr style="margin: 0;">
         <p style="margin-left: 50px;">If you just wanted to change the margin in one direction, you can just write
             "margin-" and then the direction you want. Here's 50px to margin-left. As you can see, the paragraph tag
-            has some margin by default so by only only changing the margin in the left direction, the margin
+            has some margin by default so by only changing the margin in the left direction, the margin
             for the other three directions stay as the default value for the paragraph tag.
         </p>
         
@@ -116,7 +116,7 @@
         </p>
         <hr>
         <p style="padding: 20px 200px;">
-        You can also control the vertical padding seprate from the horizontal padding.
+        You can also control the vertical padding separate from the horizontal padding.
         Here's 20px vertical and 200px horizontal.
         </p>
         <hr>
@@ -126,10 +126,10 @@
         </p>
         <hr>
         <p style="padding: 50px;">If you just wanted to change the margin in one direction, you can just write
-            "padding-" and then the direction you want. Here's 50px to margin-left.
+            "padding-" and then the direction you want. Here's 50px to padding-left.
         </p>
 
-        <p>Also remember that margin and padding take in lengths with units so any of the units we went over will
+        <p>Also remember that margin and padding take in lengths with units, so any of the units we went over will
             also work with margin and padding.</p>
 
     </div>
@@ -155,9 +155,9 @@
     <p style="font-style: italic;">style: 5px</p>   
 
     <p>
-        Now we need to set the style of the border. A border can
-        style is very simular to a text-decoration style. A list of possible
-        styles are the following.
+        Now we need to set the style of the border. A border can (is "can" an extra word here?)
+        style is very similar to a text-decoration style. Here is a list of 
+        possible styles:
     </p>
 
     <ol>
@@ -170,12 +170,12 @@
         <li>inset</li>
         <li>outset</li>
         <li>none (meaning that there is no border)</li>
-        <li>hidden (meaning the border takes up space but is invisable)</li>
+        <li>hidden (meaning that the border takes up space, but is invisible)</li>
     </ol>
 
     <p>
         I rarely use anything other than the solid border so I'm going to
-        stick with that one for now but you can check out
+        stick with that one for now, but you can check out
         <a href="https://www.w3schools.com/css/css_border.asp">this site here</a>
         to see a short description of each border along with what they look like.
     </p>
@@ -200,15 +200,16 @@
     </ol>
 
     <p>
-        You can also set side of the border to a different border using
-        "border-" and the direction you want. Very simular to padding
+        You can also set (the?) side of the border to a different border using 
+        (maybe try: "You can also set (the?) side of the border to a different style using....", though I am only suggesting this to use the word "border" less, but it's okay how it is)
+        "border-" and the direction you want. Very similar to padding
         and margin.
     </p>
 
     <p style="border-top: 5px dotted blue;">border-top: 5px dotted blue</p>
 
     <p>
-        You can also set each style individually. Very simular to
+        You can also set each style individually. Very similar to
         text decoration and Font.
     </p>
 
@@ -221,28 +222,28 @@
     </p>
 
     <p>
-        You can also define a single attribute in three differnet ways
+        You can also define a single attribute in three different ways,
         which I'll go over with an example where I define width, style
         and color all using the different methods.
     </p>
 
     <p style=" 
-    /* this defines the the width of each side of the border
+    /* This defines the the width of each side of the border
     in order of top, right, bottom and left (clockwise from the top) */
     border-width: 5px 10px 5px 8px;
 
-    /* this defines the style for the top and bottom first, then
+    /* This defines the style for the top and bottom first, then
     it defines the style for the left and right. */
     border-style: ridge solid;
 
-    /* This defines the color of each side of the border individuality */
+    /* This defines the color for each side of the border individuality */ (not sure if you meant "individually" here)
     border-right-color: red;
     border-bottom-color: yellow;
     border-left-color: green;
     border-top-color: blue;
     ">
-        The first and second way are definitely the best way of defining
-        each side of a border indivually but if you can't remember or don't
+        The first and second way are definitely the best way for defining
+        each side of a border individually, but if you can't remember or don't
         understand how it works, the last method should be clear and easy to remember.
     </p>
 
@@ -253,8 +254,8 @@
     </p>
 
     <p style="text-align: center;">
-        6. Text Align: let's you align the text within a non-inline element.
-        The possible ways you can align a the text in a non-inline element is the following.
+        6. Text Align: lets you align the text within a non-inline element.
+        The possible ways you can align a the (omit "a" or "the" here) text in a non-inline element are the following:
     </p>
 
     <ul>
@@ -262,23 +263,23 @@
         <li style="text-align: right;">text-align: right</li>
         <li style="text-align: center;">text-align: center</li>
         <li style="text-align: justify;">
-            text-align: justify (though it may look simular to "text-align: left" at first, you may notice 
+            text-align: justify (though it may look similar to "text-align: left" at first, you may notice 
             that if we add enough text to it and set it to "text-align: justify", it'll actually make
-            sure that each line ends at exactly the end of the screen unless it can't make it the the edge of the
-            screen. This is similar to the effect of a newpaper heading.
+            sure that each line ends exactly at the end of the screen, unless it can't make it to the edge of the
+            screen (not exactly sure what you mean here). This is similar to the effect of a newspaper heading.
         </li>
     </ul>
 
     <p>
         Now you may have noticed that I said it only works for non-inline elements.
-        This is for a simular reason the height and width. (also, if your curious
+        This is for a similar reason (missing some words here?) the height and width. (Also, if you're curious
         about how the styles are working, CSS reads linearly so you can
-        over write values after setting them in the code if you'd like to do so)
+        overwrite (or override?) values after setting them in the code if you'd like to do so)
     </p>
 
     <p style="text-align: center;border: 3px solid brown;border-color: brown blue;">
         In a block element, it takes up as much of the
-        width of the screen it can get so the text inside has
+        width of the screen it can get (possible?) so that the text inside has
         a lot of freedom to move.
     </p>
 
@@ -290,50 +291,50 @@
     <hr>
 
     <p>
-        7. Float: moves the floated element to the top of it's container,
+        7. Float: moves the floated element to the top of its container,
         then it moves to one side and finally forces elements to go on
         the other side of it. Let's do a few examples.
     </p>
 
     <span style="float: right; border: 3px solid green;">
-        Here is what happends when I set a span to float right.
+        Here is what happens when I set a span to float right.
     </span>
 
     <p style="border: 6px solid yellow;">
-        It may have looked normal at first but as you can see from this
-        paragraph tag which should've taken up the enitre width of the screen by
-        default now aims to swerve all text inside of it around the floated
+        It may have looked normal at first, but as you can see from this
+        paragraph tag, which should've taken up the enitre width of the screen by
+        default, it now aims to swerve all text inside of it around the floated
         element. This is what float does.
     </p>
 
     <div style="float: right; border: 3px solid green;font-size: small;">
-        Here is what happends when I set a div to float right.
+        Here is what happens when I set a div to float right.
     </div>
     
     <p style="border: 6px solid yellow;">
         You may also notice that if I do everything the exact same as the last
-        one instead of a span tag (inline-element), we use a div (block-element),
-        it does the exact same thing. This is because when we set teh float value
-        of an element, it starts to act differently from what it's display is set to.
+        one, but instead of a span tag (inline-element), we use a div (block-element),
+        it does the exact same thing. This is because when we set the float value
+        of an element, it starts to act differently from what its display is set to.
     </p>
 
     <p>
-        The big diffence between a regular block element and block element
-        which has been floated is if the block element doesn't have
-        a specified width, will act like an inline element.
+        The big difference between a regular block element and block element
+        which has been floated, is if the block element doesn't have
+        a specified width, it will act like an inline element.
     </p>
 
     <p>
-        in other words, by default, a floated block-element will take up
-        the least amount of space possible which is completly against all that a
-        block element is.
+        In other words, by default, a floated block-element will take up
+        the least amount of space possible, which is completely against all that a
+        block element is. (You could try: "..., which is completely against the definiton of a block element")
     </p>
 
     <p>
-        If you do want to have a speified width though, you must use
-        a div element becauseinline elements still won't let you chnage the
-        height and width so that's the main difference beween a floated block-element
-        and a float inline-element
+        Though, if you do want to have a specified width, you must use
+        a div element because inline elements still won't let you change the
+        height and width. That's the main difference between a floated block-element
+        and a float inline-element.
     </p>
 
     <p>Float has three main options</p>
@@ -345,17 +346,17 @@
     </ol>
 
     <p>
-        There's also a style called "clear" which negates the effects of float
+        There's also a style called "clear" which negates the effects of float,
         but we won't talk about that here. If you'd like to know more about float
-        and clear or maybe it still doesn't make a lot of sense,
+        and clear or maybe it still doesn't make a lot of sense, (You could try: "If you'd like to know more about float and clear, or maybe still need a little clarification,...", but what you have is good as well)
         <a href="https://css-tricks.com/almanac/properties/f/float/">this site</a>
-        does an amazing job at exaplaining both of these very well.
+        does an amazing job at explaining both of these very well.
     </p>
 
     <hr>
 
     <p>
-        This concludes the basics of styles. Next, wlll go over a few more HTML tags
+        This concludes the basics of styles. Next, we'll go over a few more HTML tags,
         as well as different ways to classify and id different tags within HTML.
         Good luck and have fun.
     </p>
